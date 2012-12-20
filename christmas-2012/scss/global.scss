@@ -1,0 +1,307 @@
+@import "compass/reset";
+@import "compass/css3";
+
+/*
+******************************
+* Main Styles
+******************************
+*/
+* {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+        box-sizing: border-box;
+}     
+
+
+/*
+************************************************************************************************************************
+* =! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com  
+************************************************************************************************************************
+*/
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+/*min-width: 755px;*/
+margin: 0 auto;
+overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 4.85%;
+}
+
+.row .twocol {
+width: 13.45%;
+}
+
+.row .threecol {
+width: 22.05%;
+}
+
+.row .fourcol {
+width: 30.75%;
+}
+
+.row .fivecol {
+width: 39.45%;
+}
+
+.row .sixcol {
+width: 48%;
+}
+
+.row .sevencol {
+width: 56.75%;
+}
+
+.row .eightcol {
+width: 65.4%;
+}
+
+.row .ninecol {
+width: 74.05%;
+}
+
+.row .tencol {
+width: 82.7%;
+}
+
+.row .elevencol {
+width: 91.35%;
+}
+
+.row .twelvecol {
+width: 100%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+
+/*
+******************************
+* =smaller screens
+******************************
+*/
+@media only screen and (max-width: 1100px) {
+
+body {
+  font-size: 0.79em;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+body {
+  font-size: 0.8em;
+  }
+  
+  aside p {
+  font-size:1em;
+}
+
+
+  }
+/*
+******************************
+* =mobile
+******************************
+*/
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+  font-size: 0.8em;
+  -webkit-text-size-adjust: none;
+  }
+
+  .row, body, .container {
+  width: 100%;
+  min-width: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+  width: auto;
+  float: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+}
+
+/*
+******************************
+* =General Styles
+******************************
+*/
+
+body {
+  background: #FC585F url(../img/bg-strip-red.png) repeat;
+  font-size:1em;
+}
+
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 5em;
+  color:#fff;
+}
+
+h2, h3 {
+  font-family: 'Podkova', serif;
+  font-size: 1.5em;
+  color:#fff;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration:underline;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+em {
+  font-style: italic;
+}
+
+/*
+******************************
+* =header
+******************************
+*/
+
+#lights {
+  background: url(../img/lights.png) top repeat-x;
+  margin: 0 auto;
+}
+
+header { 
+  background: url(../img/banner.png) no-repeat center 50%;
+  position: relative;
+  height: 0px;
+  background-size: 100%;
+  padding: 15%;
+  margin-top: 70px;
+}
+
+/*
+******************************
+* =main
+******************************
+*/
+#main{
+  padding-top: 2%;
+  margin-bottom:50px;
+}
+
+#main img {
+  margin-bottom:10px;
+}
+
+#main h2 {
+  padding-bottom:30px;
+  text-align:center;
+}
+
+/*
+******************************
+* =aside
+******************************
+*/
+
+aside {
+  background-color: #5f924f;
+  border: 5px solid #fff;
+}
+
+aside p {
+  font-family: 'Podkova', serif;
+  font-size:1.2em;
+  color: white;
+  padding: 10px;
+  line-height:1.1em;
+}
+
+aside a {
+  color: #000;
+}
+
+aside a:hover {
+  color: white;
+}
+/*
+******************************
+* =pictures
+******************************
+*/
+
+#pictures {
+  margin-bottom:30px;
+}
+
+#pictures img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+
+}
+
+#pictures h3 {
+  padding-bottom:30px;
+}
+
+/*
+******************************
+* =footer
+******************************
+*/
+
+footer {
+  font-family: 'Podkova', serif;
+  font-size:1.2em;
+  padding-bottom:30px;
+  text-align:center;
+}
+
+audio {
+  padding-top:20px;
+}

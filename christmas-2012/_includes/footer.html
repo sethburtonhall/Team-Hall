@@ -1,0 +1,24 @@
+<footer>
+  <p>a <a href="http://middle8media.com" title="Middle8Media">Middle8Media</a> website | handcrafted by <a href="http://middle8media.com/seth" title="Seth Hall">Daddy</a> | © 2012 </p>
+  <audio class="player" controls="controls" autoplay="autoplay"loop="loop">
+    <source src="audio/christmastimeishere.mp3" type="audio/mpeg"/> 
+    <source src="audio/christmastimeishere.ogg" type="audio/ogg"/> 
+  <!-- Windows Media Player class id to enable native streaming on IE 7 and above. IE 6 and below will go straight to flash player -->
+  <!--[if gt IE 6]>
+  <object classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" width="320" height="45"><!
+  [endif]-->
+  <!--[if !IE]><!-->
+    <object type="audio/mpeg" data="audio/christmastimeishere.mp3">
+  <!--<![endif]-->
+  <!-- Windows Media Player controls -->
+    <param name="url" value="audio/christmastimeishere.mp3" />
+    <param name="autostart" value="true" />
+    <param name="uiMode" value="full" />
+  <!-- Flash fallback -->
+    <object height="24" width="320" type="application/x-shockwave-flash" data="/flash/player.swf" id="audioplayer">
+    <param name="movie" value="/flash/player.swf__FLASH__.SWF" />
+    <param name="FlashVars" value="playerID=audioplayer&amp;soundFile=audio/christmastimeishere.mp3" />
+    </object><!--[if gt IE 6]><!-->
+    </object><!--<![endif]-->
+  </audio> 
+</footer>

@@ -1,0 +1,6 @@
+exclude: [scss, config.rb, README.md, app.js, script.js, modernizer-2.6.2.js, christmas-2011, naomi-1st-birthday]
+site_name: Team Hall
+tagline: The Online Home of Team Hall
+keywords: Greensboro, NC, North Carolina, Film, Web Design, Web Development, Triad
+auto: true
+css: /css/global.css
